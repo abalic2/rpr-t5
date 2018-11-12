@@ -1,17 +1,7 @@
-#dDugme {
-   -fx-background-color: silver;
-   -fx-border-color: black;
-}
-
-#dPodloga {
-    -fx-background-color: ghostwhite;
-}
-
-#dJednako {
+#equalsBtn{
     -fx-background-color: salmon;
-    -fx-border-color: black;
 }
 
-#dRezultat {
+#display {
     -fx-background-color: lightgreen;
 }
