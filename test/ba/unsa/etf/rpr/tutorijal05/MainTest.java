@@ -90,6 +90,57 @@ class MainTest {
     }
 
     @Test
+    public void podijeli (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn8");
+        robot.clickOn("#btn8");
+        robot.clickOn("#btn2");
+        robot.clickOn("#btn4");
+        robot.clickOn("#kroz");
+        robot.clickOn("#btn4");
+        robot.clickOn("#equalsBtn");
+        assertEquals("2206.0", display.getText());
+    }
+
+    @Test
+    public void pomnozi (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn0");
+        robot.clickOn("#puta");
+        robot.clickOn("#btn2");
+        robot.clickOn("#btn4");
+        robot.clickOn("#btn4");
+        robot.clickOn("#equalsBtn");
+        assertEquals("0.0", display.getText());
+    }
+
+    @Test
+    public void oduzmi (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn0");
+        robot.clickOn("#dotBtn");
+        robot.clickOn("#btn5");
+        robot.clickOn("#minus");
+        robot.clickOn("#btn2");
+        robot.clickOn("#btn4");
+        robot.clickOn("#btn4");
+        robot.clickOn("#equalsBtn");
+        assertEquals("-243.5", display.getText());
+    }
+
+    @Test
+    public void ostatak(FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn5");
+        robot.clickOn("#btn5");
+        robot.clickOn("#btn2");
+        robot.clickOn("#mod");
+        robot.clickOn("#btn2");
+        robot.clickOn("#equalsBtn");
+        assertEquals("0.0", display.getText());
+    }
+
+    @Test
     public void zeroBtn (FxRobot robot) {
         display = robot.lookup("#display").queryAs(Label.class);
         robot.clickOn("#btn0");
